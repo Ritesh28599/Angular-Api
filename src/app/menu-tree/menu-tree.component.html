@@ -1,0 +1,11 @@
+<ul>
+    <li *ngFor="let menu of menuData">
+      {{ menu.status }}
+      <ul>
+        <li *ngFor="let child of menu.children">
+          {{ child.name }}
+        </li>
+      </ul>
+    </li>
+  </ul>
+  
